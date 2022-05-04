@@ -38,7 +38,7 @@ app.get('/beers/:id', (req, res) => {
     .then(beersFromApi => {
       console.log('Beers from the database: ', beersFromApi);
       res.render('random-beer', {
-        randomBeer: beersFromApi
+        randomBeer: beersFromApi[0]
       });
     })
     .catch(error => console.log(error));
@@ -52,7 +52,7 @@ app.get('/random-beer', (req, res) => {
 
       responseFromAPI[0].showMoreData = true;
       res.render('random-beer', {
-        randomBeer: responseFromAPI
+        randomBeer: responseFromAPI[0]
       });
     })
     .catch(error => console.log(error));
