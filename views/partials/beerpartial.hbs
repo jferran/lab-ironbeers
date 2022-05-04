@@ -1,5 +1,9 @@
 <div class='imgcontainer'>
-  <img src='{{this.image_url}}' alt='' srcset='' />
+  {{#if this.image_url}}
+    <img src='{{this.image_url}}' alt='' srcset='' />
+  {{else}}
+    <img src='/images/noimage.png' alt='' srcset='' />
+  {{/if}}
 </div>
 <div class='beerdataparcial'>
   <h3>
