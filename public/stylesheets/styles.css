@@ -80,7 +80,8 @@ body{
 .beer img{ 
     height: 400px;
 }
-.beerdataparcial{
+.beerdataparcial{    
+    height: 250px;
     text-align: left;
     align-self: left;
 }
