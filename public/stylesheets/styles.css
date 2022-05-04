@@ -126,9 +126,10 @@ footer{
     background-color: #0a2c42;
 }
 
-a:link {
+
+a:hover, a:visited, a:link {
     text-decoration: none;
 }
-a:hover {
-    text-decoration: none;
+.container a{
+    color: black;
 }
