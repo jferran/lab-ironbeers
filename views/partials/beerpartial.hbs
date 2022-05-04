@@ -1,3 +1,5 @@
+{{log 'object' this}}
+
 <div class='imgcontainer'>
   {{#if this.image_url}}
     <img src='{{this.image_url}}' alt='' srcset='' />
@@ -7,8 +9,17 @@
 </div>
 <div class='beerdataparcial'>
   <h3>
-    <a href="/beers/{{this.id}}">{{this.name}}</a>
+    <a href='/beers/{{this.id}}'>{{this.name}}</a>
   </h3>
   <h4> {{this.description}}</h4>
   <h5> {{this.tagline}}</h5>
+  {{#if this.showMoreData}}
+    <h5>Food pairing</h5>
+    <ul>
+      {{#each food_pairing}}
+        <li>{{this}}</li>
+      {{/each}}
+    </ul>
+    <h5>{{this.brewers_tips}}</h5>
+  {{/if}}
 </div>
