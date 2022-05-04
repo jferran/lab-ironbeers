@@ -5,3 +5,38 @@ dark-blue: #0a2c42;
 grey: #bfbfbf;
 font-family: Arial, Helvetica, sans-serif;
 */
+
+body{
+    width: 100vw;
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    width: 90%;
+    margin:0;
+    margin-top: 100px;
+}
+nav{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 1% 1%;
+    background-color: #2081c3;
+    font-size: 22px;
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    padding: 1% 1%;
+    background-color: #0a2c42;
+}
